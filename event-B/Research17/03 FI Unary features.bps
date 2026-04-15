@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.psFile>
+    <org.eventb.core.psStatus name="thm02_01/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_02/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="true"/>
+    <org.eventb.core.psStatus name="thm02_04/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="0" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_05/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_06/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_07/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_08/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_09/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_10/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_11/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="true"/>
+    <org.eventb.core.psStatus name="thm02_12/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="thm02_13/THM" org.eventb.core.confidence="1000" org.eventb.core.poStamp="1" org.eventb.core.psManual="true"/>
+</org.eventb.core.psFile>

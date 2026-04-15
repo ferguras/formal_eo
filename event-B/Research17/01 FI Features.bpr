@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="thm01_01/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="Features">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p3" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p4"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5,p6"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8,p9"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p13"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p12"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p5,p8,p9">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="UnaryFeatures" org.eventb.core.type="ℙ(Features)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(Features)∧Features≠(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="finite(Features)"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∃f⦂Features·f∈UnaryFeatures"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="Objects≠(∅ ⦂ ℙ(Objects))">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="UnaryFeatures⊆Features"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀S⦂ℙ(Objects),T⦂ℙ(Objects)·(∀x⦂Objects·x∈S⇔x∈T)⇒S=T">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="¬UnaryFeatures=(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀S⦂ℙ(Objects),T⦂ℙ(Objects)·S⊆Objects∧T⊆Objects∧(∀x⦂Objects·x∈Objects⇒(x∈S⇔x∈T))⇒S=T">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="¬Objects=(∅ ⦂ ℙ(Objects))">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="UnaryFeatures⊆Features∧finite(UnaryFeatures)∧UnaryFeatures≠(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="finite(UnaryFeatures)"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="¬⊥"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Features=(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀S⦂ℙ(Objects),T⦂ℙ(Objects)·⊤∧⊤∧(∀x⦂Objects·⊤⇒(x∈S⇔x∈T))⇒S=T">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="thm01_02/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4" org.eventb.core.prSets="Features">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p6"/>
+                <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p1" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8"/>
+                <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9,p10,p11"/>
+                <org.eventb.core.prHypAction name="REWRITE3" org.eventb.core.prHidden="p2" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13,p14"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p15" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p16"/>
+                        <org.eventb.core.prHypAction name="REWRITE1" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                        <org.eventb.core.prHypAction name="REWRITE2" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p17"/>
+                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p9"/>
+                        <org.eventb.core.prHypAction name="HIDE4" org.eventb.core.prHyps="p12"/>
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'">
+                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p16" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p18"/>
+                                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p17"/>
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p3,p7,p10,p11,p13,p14">
+                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="BinaryFeatures" org.eventb.core.type="ℙ(Features)"/>
+        <org.eventb.core.prIdent name="UnaryFeatures" org.eventb.core.type="ℙ(Features)"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="finite(Features)∧Features≠(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="finite(Features)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="∃f⦂Features·f∈UnaryFeatures"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬BinaryFeatures=(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="Objects≠(∅ ⦂ ℙ(Objects))">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="UnaryFeatures⊆Features"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="finite(BinaryFeatures)"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="∀S⦂ℙ(Objects),T⦂ℙ(Objects)·(∀x⦂Objects·x∈S⇔x∈T)⇒S=T">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="¬UnaryFeatures=(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀S⦂ℙ(Objects),T⦂ℙ(Objects)·S⊆Objects∧T⊆Objects∧(∀x⦂Objects·x∈Objects⇒(x∈S⇔x∈T))⇒S=T">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="¬Objects=(∅ ⦂ ℙ(Objects))">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="BinaryFeatures⊆Features"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="UnaryFeatures⊆Features∧finite(UnaryFeatures)∧UnaryFeatures≠(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="finite(UnaryFeatures)"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬⊥"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="BinaryFeatures⊆Features∧finite(BinaryFeatures)∧BinaryFeatures≠(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="¬Features=(∅ ⦂ ℙ(Features))"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="∀S⦂ℙ(Objects),T⦂ℙ(Objects)·⊤∧⊤∧(∀x⦂Objects·⊤⇒(x∈S⇔x∈T))⇒S=T">
+            <org.eventb.core.prIdent name="Objects" org.eventb.core.type="ℙ(Objects)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∃f⦂Features·f∈BinaryFeatures"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

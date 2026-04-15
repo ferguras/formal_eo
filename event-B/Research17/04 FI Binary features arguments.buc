@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.constant name="3" org.eventb.core.identifier="ArgumentFeaturesAssignments"/>
+    <org.eventb.core.axiom name="4" org.eventb.core.comment="// Unary feature assignment is a subset of Feature assignment" org.eventb.core.label="axm02_01" org.eventb.core.predicate="ArgumentFeaturesAssignments ⊆ Forms"/>
+    <org.eventb.core.extendsContext name="5" org.eventb.core.target="02 FI Forms"/>
+    <org.eventb.core.axiom name="V" org.eventb.core.comment="// All possible assignments of Unary features to Objects" org.eventb.core.label="axm02_02" org.eventb.core.predicate="ArgumentFeaturesAssignments = Objects × BinaryFeatures "/>
+    <org.eventb.core.axiom name="J" org.eventb.core.comment="// All Binary feature assignments are Binary features" org.eventb.core.label="thm02_01" org.eventb.core.predicate="ran(ArgumentFeaturesAssignments)= BinaryFeatures" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="W" org.eventb.core.label="thm02_02" org.eventb.core.predicate="dom(ArgumentFeaturesAssignments)= Objects  " org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="U" org.eventb.core.label="thm02_04" org.eventb.core.predicate="∀af,o,f· (af ⊆ ArgumentFeaturesAssignments ∧ (o ↦ f) ∈ af) ⇒ f ∈ BinaryFeatures" org.eventb.core.theorem="true"/>
+    <org.eventb.core.constant name="8" org.eventb.core.identifier="SetsArgumentFeaturesAssignments"/>
+    <org.eventb.core.axiom name=":" org.eventb.core.comment="// All possible sets of Binary features assignments to Objects" org.eventb.core.label="axm02_03" org.eventb.core.predicate="SetsArgumentFeaturesAssignments = ℙ(ArgumentFeaturesAssignments)"/>
+    <org.eventb.core.axiom name="=" org.eventb.core.comment="// rewrite-rule to support nested dom statements" org.eventb.core.label="thm02_05" org.eventb.core.predicate="dom(Objects × BinaryFeatures) = Objects" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="M" org.eventb.core.comment="// rewrite-rule to support nested ran statements" org.eventb.core.label="thm02_06" org.eventb.core.predicate="ran(Objects × BinaryFeatures) = BinaryFeatures" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="P" org.eventb.core.label="thm02_07" org.eventb.core.predicate="ran(ArgumentFeaturesAssignments) ⊆ BinaryFeatures" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="Q" org.eventb.core.label="thm02_08" org.eventb.core.predicate="BinaryFeatures ⊆ ran(ArgumentFeaturesAssignments)" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="N" org.eventb.core.label="thm02_09" org.eventb.core.predicate="ran(ArgumentFeaturesAssignments) = { y ∣ y ∈ BinaryFeatures ∧ (∃x· x ∈ Objects ∧ (x ↦ y) ∈ ArgumentFeaturesAssignments) }" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="X" org.eventb.core.label="thm02_10" org.eventb.core.predicate="dom(ArgumentFeaturesAssignments) = { x ∣ x ∈ Objects ∧ (∃y· y ∈ BinaryFeatures ∧ (x ↦ y) ∈ ArgumentFeaturesAssignments) }" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="&gt;" org.eventb.core.label="thm02_11" org.eventb.core.predicate="∀A,B· (A ⊆ ArgumentFeaturesAssignments ∧ B ⊆ ArgumentFeaturesAssignments ∧ A ⊆ B) ⇒ ran(A) ⊆ ran(B)" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="R" org.eventb.core.label="thm02_12" org.eventb.core.predicate="∀af,o,f· (af ⊆ ArgumentFeaturesAssignments ∧ (o ↦ f) ∈ af) ⇒ f ∈ BinaryFeatures" org.eventb.core.theorem="true"/>
+    <org.eventb.core.axiom name="A" org.eventb.core.label="thm02_13" org.eventb.core.predicate="∀af,o· (af ⊆ ArgumentFeaturesAssignments ∧ o ∈ dom(af))  &#13;&#10;  ⇒ { f ∣ f ∈ BinaryFeatures ∧ (o ↦ f) ∈ af } ≠ ∅ " org.eventb.core.theorem="true"/>
+</org.eventb.core.contextFile>

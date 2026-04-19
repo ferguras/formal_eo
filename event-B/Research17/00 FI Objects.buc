@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
-    <org.eventb.core.carrierSet name="'" org.eventb.core.comment="// an Object: a persistent, bare individual" org.eventb.core.identifier="Objects"/>
-    <org.eventb.core.axiom name="(" org.eventb.core.comment="// Constraining the model to World of a System " org.eventb.core.label="axm00_01" org.eventb.core.predicate="finite(Objects)"/>
-    <org.eventb.core.axiom name=")" org.eventb.core.comment="// Disallowing an empty System" org.eventb.core.label="axm00_02" org.eventb.core.predicate="Objects ≠ ∅"/>
-    <org.eventb.core.axiom name="." org.eventb.core.comment="// Rewrite rule: equal sets" org.eventb.core.label="thm00_00" org.eventb.core.predicate="∀S,T· (S ⊆ Objects ∧ T ⊆ Objects ∧ (∀x· x∈Objects ⇒ (x∈S ⇔ x∈T))) ⇒ S = T" org.eventb.core.theorem="true"/>
-</org.eventb.core.contextFile>
